@@ -7,6 +7,10 @@ p {
     font-weight:lighter;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+p1{
+    color: #009578; 
+    letter-spacing:2px;
+}
 h1 {
     font-size: 40px;
 }
