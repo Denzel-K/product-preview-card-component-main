@@ -1,45 +1,75 @@
-@media(max-width: 1440px) {
+
 body{
-    background-color: white;
+    background-color: rgb(218, 205, 228);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 p {
-    font-size: 20px;
-    font-weight:lighter;
+    font-size: 16px;
+    font-weight: lighter;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-p1{
-    color: #009578; 
-    letter-spacing:2px;
+.p1{
+    color: #909394; 
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 600;
 }
-h1 {
-    font-size: 40px;
+.h_title {
+    font-size: 48px;
+    font-weight: 700;
+    padding: 1.5rem 0;
 }
 .container{
     display: flex;
+    width: 60%;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    padding: 80px;
-    margin: auto;
-   background-color:bisque;
-   flex-wrap: wrap;
-
+    border-radius: 12px;
+    height: fit-content;
 }
 .container > div{
-    height: auto;
-    width: 30%;
+    width: 50%;
 }
 .flex1{
-    border-radius:5% 0 0 5%;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
 }
 .flex2{
     background-color:mintcream;
-    border-radius:0 5% 5% 0;
-    padding:30px;
+    border-radius:0 12px 12px 0;
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 600px;
+}
+picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .img1{
-    border-radius:5% 0 0 5%;
+    border-radius: 12px 0 0 12px;
+    width: 100%;
     height: 100%;
-    width:100%;
 }
 .dollar1 {
     font-weight:600;
@@ -58,9 +88,9 @@ h1 {
 .button {
     margin: auto;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     display: inline-flex;
-    height: 50px;
+    height: 40px;
     background-color: #009578;
     text-align: center;
     justify-content: space-around;
@@ -76,7 +106,6 @@ h1 {
     background-color: #006e58;
 }
 .button_text, .button_icon {
-    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     color: white;
@@ -89,16 +118,21 @@ h1 {
     font-size: 1.5em;
     background-color: rgba(0, 0, 0, 0.08)
 }
-.button_text{
-    letter-spacing: 3px;
-    word-spacing: 5px;
-}
+.button_text {
+    font-size: 20px;
 }
 
-@media (max-width: 600px){
-body{
-    background-color: white;
+@media(max-width: 1024px){
+    .container {
+        width: 75%;
+    }
 }
+@media(max-width: 780px){
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 600px){
 p {
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -110,36 +144,42 @@ h1 {
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: auto;
-    background-color:bisque;
-    padding: 20px;
+    width: 95%;
 }
 .container > div{
-    margin: auto;
-    width: auto;
-    height:auto;
+    width: 100%;
 }
 .flex1{
-    border-radius: 5% 5% 0 0;
+    border-radius: 12px 12px 0 0;
+    height: 300px;
+    padding: 0;
 }
 .flex2{
-    background-color:mintcream;
-    border-radius:0 0 5% 5%;
-    padding:10px;
+    border-radius:0 0 12px 12px;
+    padding: 0;
+    height: auto;
+}
+.flex2 > * {
+    padding: 0 1rem;
 }
 picture {
-    display: block; 
     width: 100%;
     max-width: 600px;
+    height: 300px;
 }
-picture > * {
+.img1 {
+    border-radius: 12px 12px 0 0;
     width: 100%;
     height: 100%;
 }
-.img1 {
-    border-radius: 5% 5% 0 0;
+.h_title {
+    font-size: 32px;
+    font-weight: 700;
 }
+
 .dollar1 {
     color: #009578;
     font-size: 24px;
@@ -151,9 +191,9 @@ picture > * {
 .button {
     margin: auto;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     display: inline-flex;
-    height: 30px;
+    height: 40px;
     background-color: #009578;
     text-align: center;
     justify-content: space-around;
@@ -182,10 +222,7 @@ picture > * {
     font-size: 1.5em;
     background-color: rgba(0, 0, 0, 0.08);
 }
-.button_text{
-    letter-spacing: 2px;
-    word-spacing: 5px;
-}
+
 }
 
 
